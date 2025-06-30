@@ -1,0 +1,149 @@
+/* Theme color variables */
+:root[data-theme="light"] {
+  --text: #0f1307;
+  --background: #ffffff;
+  --primary: #9cc256;
+  --secondary: #be93d7;
+  --accent: #ce7891;
+}
+
+:root[data-theme="dark"] {
+  --text: #ffffff;
+  --background: #060703;
+  --primary: #83a93d;
+  --secondary: #53286c;
+  --accent: #873149;
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.about img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 1em 0;
+  border-radius: 8px;
+}
+
+
+.navbar .logo {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1588776814546-dff1aa9df61b') no-repeat center center/cover;
+  color: var(--primary);
+  text-align: center;
+  padding: 5em 2em;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--secondary);
+  margin-bottom: 1em;
+}
+
+/* About */
+.about p {
+  font-size: 1.1em;
+}
+
+/* Services */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
+  gap: 1.5em;
+}
+
+.service {
+  background-color: var(--background);
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.service h3 {
+  color:var(--primary);
+  margin-bottom: 0.5em;
+}
+
+/* Contact */
+.contact p {
+  margin-bottom: 0.5em;
+}
+
+.hours h2{
+  margin-bottom: 0.5em;
+}
+
+/* Footer */
+footer {
+  background-color:var(--background);
+  color: var(--text);
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+}
