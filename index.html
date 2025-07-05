@@ -1,103 +1,164 @@
-<!--<!DOCTYPE html>
-<html lang="en" data-theme="light"></html>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gemeinschaftspraxis Dr. Marcus Merscheim Kirstin Venegas</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemeinschaftspraxis</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawsome Icons -->
+    <script src="https://kit.fontawesome.com/df81cfa581.js" crossorigin="anonymous"></script>
+    <!-- Google Font Kumbh Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,116&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+    <!-- Navbar Section -->
     <nav class="navbar">
-      <img src="resources/Logo Praxis.png" alt="Logo der Praxis" />
-      <ul class="nav-links">
-        <li><a href="#about">Über uns</a></li>
-        <li><a href="#services">Leistungen</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-      </ul>
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                 <picture>
+                    <source srcset="/images/logo-praxis.png" media="(min-width: 830px)">
+                    <source srcset="/images/logo-praxis-alt.png" media="(min-width: 1px)">
+                    <img id="navbar__logo--image"  src="/images/Logo Praxis-alt.png" alt="Logo der Praxis"> 
+                 </picture>
+            </a>
+            <!-- Hamburger Menu Mobile -->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Navbar Menu Items -->
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Start</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/tech.html" class="navbar__links">Praxis</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Leistungen</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Kontakt</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="hero">
-      <h1>Herzlich willkommen auf unserer Internetseite</h1>
-      <p>Unser Anliegen ist es, Sie in allen Lebensphasen <br> gynäkologisch-geburtshilflich umfassend zu beraten und zu begleiten.</p>
+    <!--Hero Section-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>PRAXIS FÜR FRAUENHEILKUNDE</h1>
+                <h2>UND GEBURTSHILFE</h2>
+                <p>Dr. med. Jórg Roeser <br> Dr. med. Marcus Merscheim <br> Kirstin Venegas</p>
+                <button class="main__btn"><a href="/">Terminvereinbarung</a></button>
+            </div>
+            <!-- SVG Image -->
+            <div class="main__image--container">
+                <img src="images/pic1.svg" alt="pic" id="main__img">
+            </div>
+        </div>
     </div>
-  </header>
 
-  <main>
-    <section id="about" class="about">
-      <h2>Über uns</h2>
-      <p>
-        Unsere moderne und innovative Gemeinschaftspraxis für Frauenheilkunde und Geburtshilfe bietet Ihnen eine umfassende, individuelle und kompetente Versorgung auf höchstem Niveau.<br> <br>
-         Uns ist es wichtig, dass Sie sich bei uns wohlfühlen. Daher legen wir Wert auf eine vertrauensvolle und offene Atmosphäre in einem angenehmen Ambiente.<br><br>
+    <!-- Services Section -->
 
-Wir arbeiten qualitätsgesichert nach neuesten medizinischen Erkenntnissen unter Zuhilfenahme modernster Untersuchungstechniken und gewährleisten eine Behandlung nach dem neuesten Stand der Medizin.
-      </p>
-    </section>
-
-    <section id="services" class="services">
-      <h2>Unsere Leistungen</h2>
-      <div class="service-grid">
-        <div class="service">
-          <h3>Kinderwunsch und Schwangerschaft:</h3>
-          <ul>
-           <li>Kinderwunschberatung</li>
-            <li>Infektionsdiagnostik</li>
-            <li>Doppler-Sonographie</li>
-            <li>Hebammensprechstunde</li>
-          </ul>
+    <div class="services">
+        <h1>Praxis</h1>
+        <div class="services__container">
+            <!-- Card 1 -->
+            <div class="services__card">
+                <h2>Kirstin Venegas</h2>
+                <p>Frauenärztin</p>
+                <button>Termin vereinbaren</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="services__card">
+                <h2>Dr. med. Jörg Roeser</h2>
+                <p>Frauenarzt</p>
+                <button>Termin vereinbaren</button>
+            </div>
+            <div class="services__card">
+                <h2>Dr. med. Marcus Merscheim</h2>
+                <p>Frauenarzt</p>
+                <button>Termin vereinbaren</button>
+            </div>
         </div>
-        <div class="service">
-          <h3>Gynäkologie</h3>
-          <ul>
-            <li>Krebsfrüherkennungsuntersuchung</li>
-            <li>Endometriosediagnostik und –therapie</li>
-            <li>Hormonersatztherapie</li>
-          </ul>
+    </div>
+
+    <!-- Footer Section -->
+     <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Praxis</h2>
+                    <a href="/">Unsere Praxisphilosophie</a>
+                    <a href="/">Marchus Merscheim</a>
+                    <a href="/">Kirstin Venegas</a>
+                    <a href="/">Jörg Roeser</a>
+                    <a href="/">Markus Söder</a>
+
+                </div>
+                <div class="footer__link--items">
+                    <h2>Wissenswertes</h2>
+                    <a href="/">Sprechzeiten</a>
+                    <a href="/">Leistungen</a>
+                    <a href="/">Kinderwunsch</a>
+                    <a href="/">Rund ums Baby</a>
+                    <a href="/">Allgemeines</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Aktuelles</h2>
+                    <a href="/">Coronavirus</a>
+                    <a href="/">Hitzewelle</a>
+                    <a href="/">2. Welsangriff</a>
+                    <a href="/">Praxisblog</a>
+                    <a href="/">Verkehrsinfos</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Kontakt</h2>
+                    <a href="/">Telefon</a>
+                    <a href="/">Fax</a>
+                    <a href="/">Brieftaube</a>
+                    <a href="/">Telegram</a>
+                    <a href="/">Postreiter</a>
+                </div>
+            </div>
         </div>
-        <div class="service">
-          <h3>Allgemein</h3>
-          <ul>
-            <li>Brustultraschall</li>
-            <li>Bauchultraschall</li>
-            <li>Vaginalultraschall</li>
-            <li>Schutzimpfungen nach den Empfehlungen der STIKO</li>
-            <li>Psychosomatische Grundversorgung</li>
-          </ul>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <!-- Copyright Icon -->
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fa-solid fa-user-doctor"></i>&nbsp;Frauenärzte Porz</a>
+                </div>
+                <p class="website__rights">&#169;TestWebseite 2025. All rights reserved</p>
+                <!-- Social Media links -->
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Kontaktieren Sie uns</h2>
-      <p><strong>Tel.:</strong> +49 2203 54646</p>
-      <p><strong>Fax.:</strong> +49 2203 503560</p>
-      <p><strong>Addresse:</strong> Hermannstr. 1-3 | 51143 Köln</p>
-    </section>
-  
-    <section id="hours" class="hours">
-      <h2>Unsere Öffnungszeiten</h2>
-      <table>
-       <tr>
-        <td>Montag, Diensag und Donnerstag</td>
-        <td style="text-align: right;">&nbsp;&nbsp;07.30  – 19.00 Uhr</td>
-     </tr>
-      <tr>
-        <td>Mittwoch</td>
-        <td style="text-align: right;">07.30  – 13.00 Uhr</td>
-      </tr>
-      <tr>
-        <td>Freitag</td>
-        <td style="text-align: right;">07.30  – 14.00 Uhr</td>
-      </tr>
-</table>
-
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Test Webseite. All rights reserved.</p>
-  </footer>
+     </div>
+    <!-- JS reference -->
+    <script src="app.js"></script>
 </body>
-</html>-->
+</html>
